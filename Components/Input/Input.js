@@ -35,27 +35,16 @@ const ButtonText = styled.Text`
   color: white;
 `;
 
-export default function Input({ value, onChange }) {
-  const fetchData = async () => {
-    try {
-      const responds = await fetch(
-        `http://api.icndb.com/jokes/random/${value}`
-      );
-      const data = await responds.json();
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
+export default function Input({ value, onChange, fetchData }) {
   return (
     <Container>
+      <Text>How many jokes do you want?</Text>
       <InputField
         keyboardType={"numeric"}
         value={value}
         onChangeText={(text) => onChange(text)}
       />
-      <Button onPress={() => fetchData()}>
+      <Button onPress={fetchData}>
         <ButtonText>Search</ButtonText>
       </Button>
     </Container>
