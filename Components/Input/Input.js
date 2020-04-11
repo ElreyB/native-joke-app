@@ -14,7 +14,12 @@ export default function Input({ value, onChange }) {
         keyboardType={"numeric"}
         value={value}
         onChangeText={(text) => onChange(text)}
-        style={styles.input}
+        style={{
+          height: 40,
+          width: 300,
+          borderColor: "grey",
+          borderWidth: 2,
+        }}
       />
       <Text>{value}</Text>
     </View>
@@ -29,10 +34,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   input: {
-    borderColor: "gray",
     height: 40,
     width: 300,
-    backgroundColor: "#222",
-    color: "#000",
+    borderColor: "grey",
+    borderWidth: 2,
   },
 });
