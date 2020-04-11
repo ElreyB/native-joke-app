@@ -7,12 +7,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Input value={value} onChange={setValue} />
-      {/* <TouchableHighlight
-        onPress={() => setCount(count + 1)}
-        style={styles.button}
-      >
-        <Text style={styles.text}>Increase {count}</Text>
-      </TouchableHighlight> */}
     </View>
   );
 }
@@ -23,17 +17,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
-  },
-  button: {
-    marginTop: 20,
-    width: 100,
-    height: 50,
-    backgroundColor: "black",
-    color: "white",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text: {
-    // textAlign: "center",
   },
 });
