@@ -19,6 +19,7 @@ const InputField = styled.TextInput`
   height: 40px;
   width: 300px;
   border: 2px solid grey;
+  margin: 20px;
 `;
 
 const Button = styled.TouchableHighlight`
