@@ -13,6 +13,7 @@ const Contanier = styled.View`
   justify-content: center;
   align-items: center;
   padding: 10px;
+  margin-bottom: 50px;
 `;
 
 function Card({ joke }) {
